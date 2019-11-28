@@ -8,8 +8,6 @@ sap.ui.define(
       "sap.ui.richtexteditor.sample.RichTextEditor.RichTextEditor",
 
       {
-        // sText: "l",
-
         onInit: function() {
           var that = this;
           oRichTextEditor = new RTE({
@@ -21,13 +19,7 @@ sap.ui.define(
             showGroupLink: true,
             showGroupInsert: true,
             value: "lala"
-            // change: function() {
-            //   oRichTextEditor.setValue();
-            // }
           });
-
-          // this.getView().setModel(rte, "rte");
-          // rte.setBindingContext("OneWay");
 
           that
             .getView()
@@ -38,29 +30,11 @@ sap.ui.define(
           oRichTextEditor.addButtonGroup("styleselect").addButtonGroup("table");
         },
 
-        // _createRTE: function() {
-        //   let sText;
-        //   var
-
-        //   return oRichTextEditor;
-        // },
-
         onPress: function() {
           debugger;
           document.getElementById(
             "container-SAPUI5_Demo---View1--textId"
           ).innerHTML = oRichTextEditor.getValue();
-
-          // let textElem = sap.ui.getCore().getElementById("textId");
-          // console.log(textElem);
-
-          // console.log(this._createRTE().getValue());
-          // oRichTextEditor.setValue(oRichTextEditor.getValue());
-
-          // const textElement = sap.ui
-          //   .getCore()
-          //   .byId("container-SAPUI5_Demo---View1--textId");
-          // textElement.setText(oRichTextEditor.getValue());
         }
       }
     );
