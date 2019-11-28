@@ -1,0 +1,23 @@
+ID: deployRTE
+_schema-version: "2.1"
+version: 0.0.1
+
+modules:
+  - name: App
+    type: html5
+    path: app
+    parameters:
+      disk-quota: 256M
+      memory: 256M
+    build-parameters:
+      builder: npm
+    requires:
+      - name: uaa_App
+
+resources:
+  - name: uaa_App
+    parameters:
+      path: ./xs-security.json
+      service-plan: application
+      service: xsuaa
+    type: org.cloudfoundry.managed-service

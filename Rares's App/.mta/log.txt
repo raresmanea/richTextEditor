@@ -1,0 +1,22 @@
+[main] INFO com.sap.di.ext.mta.proc.DescriptorProcessorImpl - MTA manifest processing on 7 threads
+[main] INFO com.sap.di.ext.mta.cli.CliExecutor - arguments: [--build-target=CF, build]
+[main] INFO com.sap.di.ext.mta.cli.CliExecutor - Archive path is C:\rte\Rares's App\Rares's App.mtar
+[main] DEBUG com.sap.di.ext.mta.cli.CliBuildExecutor - Starting MTA build
+[main] INFO com.sap.di.beans.DynamicBeans - Created implementation class com.sap.di.ext.mta.dto.DesignDescriptor$$impl0 for bean interface com.sap.di.ext.mta.dto.DesignDescriptor
+[main] INFO com.sap.di.beans.DynamicBeans - Created implementation class com.sap.di.ext.mta.dto.DesignModule$$impl1 for bean interface com.sap.di.ext.mta.dto.DesignModule
+[main] INFO com.sap.di.beans.DynamicBeans - Created implementation class com.sap.di.ext.mta.dto.RequiredSymbol$$impl2 for bean interface com.sap.di.ext.mta.dto.RequiredSymbol
+[main] INFO com.sap.di.beans.DynamicBeans - Created implementation class com.sap.di.ext.mta.dto.Resource$$impl3 for bean interface com.sap.di.ext.mta.dto.Resource
+[main] INFO com.sap.di.ext.mta.proc.ProcessingRun - Processing MTA deployRTE
+[main] INFO com.sap.di.beans.DynamicBeans - Created implementation class com.sap.di.ext.mta.proc.ModuleBuildDependency$$impl4 for bean interface com.sap.di.ext.mta.proc.ModuleBuildDependency
+[main] INFO com.sap.di.ext.mta.proc.ProcessingRun - Verifying MTA deployRTE
+[main] INFO org.eclipse.che.commons.lang.concurrent.ThreadLocalPropagateContext - using a no-op implementation of interface org.eclipse.che.commons.lang.concurrent.ThreadLocalWrapper
+[main] INFO com.sap.di.ext.mta.proc.ProcessingRun - Verifying MTA deployRTE: created 2 verification tasks
+[pool-1-thread-1] INFO com.sap.di.ext.mta.proc.ProcessingRun - Verifying MTA deployRTE: started symbol resource[uaa_App]
+[pool-1-thread-2] INFO com.sap.di.ext.mta.proc.ProcessingRun - Verifying MTA deployRTE: started symbol module[App]
+[pool-1-thread-1] INFO com.sap.di.ext.mta.proc.ProcessingRun - Verifying MTA deployRTE: finished symbol resource[uaa_App]
+[pool-1-thread-2] DEBUG com.sap.di.ext.mta.cli.CommandHelper - Module 'App': command timeout is 300 seconds
+[pool-1-thread-2] DEBUG com.sap.di.ext.mta.cli.CommandHelper - Module 'App': command output file is C:\rte\Rares's App\.mta\modulebuild10818684464426050963.txt
+[pool-1-thread-2] DEBUG com.sap.di.ext.mta.cli.CommandHelper - Module 'App': invoking command [npm.cmd, install, --production]
+[pool-1-thread-2] INFO com.sap.di.ext.mta.proc.ProcessingRun - Verifying MTA deployRTE: finished symbol module[App]
+[main] INFO com.sap.di.beans.DynamicBeans - Created implementation class com.sap.di.ext.mta.dto.DeploymentDescriptor$$impl5 for bean interface com.sap.di.ext.mta.dto.DeploymentDescriptor
+[main] INFO com.sap.di.beans.DynamicBeans - Created implementation class com.sap.di.ext.mta.dto.DeploymentModule$$impl6 for bean interface com.sap.di.ext.mta.dto.DeploymentModule
